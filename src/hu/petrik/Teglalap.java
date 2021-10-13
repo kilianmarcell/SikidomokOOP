@@ -4,6 +4,11 @@ public class Teglalap extends Sikidom{
 
     private double a, b;
 
+    public Teglalap() {
+        this.a = veletlenHossz();
+        this.b = veletlenHossz();
+    }
+
     public Teglalap(double a, double b) {
         this.a = a;
         this.b = b;
