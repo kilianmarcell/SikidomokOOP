@@ -5,11 +5,14 @@ public class Haromszog extends Sikidom {
     private double a, b, c;
 
     public Haromszog() {
-        a = veletlenHossz();
-        b = veletlenHossz();
-        c = veletlenHossz();
+        double a = veletlenHossz();
+        double b = veletlenHossz();
+        double c = veletlenHossz();
 
         while (!szerkeszthetoE(a, b, c)) {
+            a = veletlenHossz();
+            b = veletlenHossz();
+            c = veletlenHossz();
         }
 
         this.a = a;
